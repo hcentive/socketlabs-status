@@ -20,6 +20,7 @@ $ mv conf/default.json.template conf/default.json
 Update configuration attributes with your Socketlabs API credentials and server IDs. Make the following changes to `conf/default.json` -
 * Replace `YOUR_API_USERNAME` with your Socketlabs API username.
 * Replace `YOUR_API_PASSWORD` with the password for the API user.
+* Update `server_ids` attribute with a comma-separated list of your Socketlabs servers e.g. 1000,1001,1002.
 
 If using a proxy server to make outbound HTTP calls, update the proxy server configuration -
 *  Set the value of `proxy_enabled` to `true`.
