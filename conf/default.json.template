@@ -1,0 +1,17 @@
+{
+  "api_host": "api.socketlabs.com",
+  "http_scheme": "https",
+  "api_version": "v1",
+  "api_user": "YOUR_API_USERNAME",
+  "api_password": "YOUR_API_PASSWORD",
+  "account_data_api_path" : "accountData",
+  "server_ids" : [],
+  "api_time_to_wait_ms": 1000,
+  "warning_threshold": 70,
+  "critical_threshold": 85,
+  "logdir": "/var/log/socketlabs-status",
+  "infolog": "info.log",
+  "errorlog": "error.log",
+  "proxy_enabled": "false",
+  "proxy_server": "YOUR_PROXY_SERVER"
+}

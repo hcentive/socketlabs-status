@@ -1,0 +1,22 @@
+{
+  "name": "socketlabs-status",
+  "version": "1.0.0",
+  "description": "Node module to query status of servers in a Socketlabs account.",
+  "main": "index.js",
+  "dependencies": {
+    "https": "1.0.0",
+    "path": "0.12.7",
+    "winston": "^2.2.0",    
+    "https-proxy-agent": "^1.0.0",
+    "nagios-plugin": "^0.1.2",
+    "bottleneck": "^1.14.0"
+  },
+  "scripts": {
+    "install": "mkdir -p /var/log/socketlabs-status"
+  },
+  "bin": {
+    "check-socketlabs": "./index.js"
+  },
+  "author": "Satyendra Sharma <satyendra.sharma@hcentive.com>",
+  "license": "ISC"
+}
