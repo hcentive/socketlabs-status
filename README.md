@@ -7,11 +7,13 @@ The plugin is implemented in [Node.js](https://nodejs.org/en/). The following co
 * git
 * nodejs (5.9.1)
 
-## Installation and Configuration
+##  Configuration and Installation
 Check out the repository from git -
 ```
 $ git clone https://github.com/hcentive/socketlabs-status
 ```
+
+#### Configuration
 Go to the `socketlabs-status` directory. Rename `default.json.template` to `default.json`.
 ```
 $ cd socketlabs-status
