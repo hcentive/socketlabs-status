@@ -39,9 +39,28 @@ Run `npm install` in the installation directory to install dependencies and the 
 $ npm install
 ```
 
+## Usage
+To run the check against the configured Socketlabs, simply run the `check-scoketlabs` executable.
 ```
 $ check-socketlabs
 CHECK-SOCKETLABS OK - Server ID: 0001 - 11.92% of total message allowance used; 0.96% of total bandwidth allowance used; 0.34% of total API allowance used|message-usage=11.92%;70;85;; bandwidth-usage=0.96%;70;85;; api-usage=0.34%;70;85;;
+```
+The plugin can be run with command line options to override attributes in the configuration files. Run with `--help` option to view available command line parameters
+```
+$ check-socketlabs --help
+Usage: check-socketlabs [options]
+
+Options:
+
+  -h, --help                    output usage information
+  -u, --username <username>     API username
+  -p, --password <password>     API password
+  -s --serverids <servers-ids>  Comma-separated server IDs
+```
+For example, to run the check for a specific server, pass the server ID with the `-s` or `--serverids` parameter.
+```
+$ check-socketlabs -s 14940                  
+CHECK-SOCKETLABS OK - Server ID: 14940 - 0.26% of total message allowance used; 0.00% of total bandwidth allowance used; 1.60% of total API allowance used|message-usage=0.26%;70;85;; bandwidth-usage=0.00%;70;85;; api-usage=1.60%;70;85;;
 ```
 
 Depending on your Nagios installation, follow one of the following guides to install the plugin on your Nagios server -
