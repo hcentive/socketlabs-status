@@ -37,8 +37,11 @@ To change thresholds, update the following attributes in `conf/default.json` -
 Run `npm install` in the installation directory to install dependencies and the executable to run the status check. Run `socketlabs-status` to test the plugin -
 ```
 $ npm install
-$ socketlabs-status
-CHECK-SOCKETLABS OK - Server ID: 8995 - 11.92% of total message allowance used; 0.96% of total bandwidth allowance used; 0.34% of total API allowance used|message-usage=11.92%;70;85;; bandwidth-usage=0.96%;70;85;; api-usage=0.34%;70;85;;
+```
+
+```
+$ check-socketlabs
+CHECK-SOCKETLABS OK - Server ID: 0001 - 11.92% of total message allowance used; 0.96% of total bandwidth allowance used; 0.34% of total API allowance used|message-usage=11.92%;70;85;; bandwidth-usage=0.96%;70;85;; api-usage=0.34%;70;85;;
 ```
 
 Depending on your Nagios installation, follow one of the following guides to install the plugin on your Nagios server -
