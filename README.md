@@ -22,7 +22,7 @@ $ mv conf/default.json.template conf/default.json
 Update configuration attributes with your Socketlabs API credentials and server IDs. Make the following changes to `conf/default.json` -
 * Replace `YOUR_API_USERNAME` with your Socketlabs API username.
 * Replace `YOUR_API_PASSWORD` with the password for the API user.
-* Update `server_ids` attribute with a comma-separated list of your Socketlabs servers e.g. 1000,1001,1002.
+* Optionally, update `server_ids` attribute with a comma-separated list of your Socketlabs servers e.g. 1000,1001,1002. The server IDs can be passed as a command line parameter as well.
 
 If using a proxy server to make outbound HTTP calls, update the proxy server configuration -
 *  Set the value of `proxy_enabled` to `true`.
@@ -38,7 +38,7 @@ To change thresholds, update the following attributes in `conf/default.json` -
 ### Installation
 Run `npm install` in the installation directory to install dependencies and the executable to run the status check. Run `socketlabs-status` to test the plugin -
 ```
-$ npm install
+$ npm install -g
 ```
 
 ## Usage
