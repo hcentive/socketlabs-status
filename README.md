@@ -59,7 +59,8 @@ Options:
 For example, to run the check for a specific server, pass the server ID with the `-s` or `--serverids` parameter.
 ```
 $ check-socketlabs -u myusername -p mypassword -s 0000
-SOCKETLABS OK - Server ID: 0000 - 0.26% of total message allowance used; 0.00% of total bandwidth allowance used; 2.74% of total API allowance used|message-usage=0.26%;70;85;; bandwidth-usage=0.00%;70;85;; api-usage=2.74%;70;85;;```
+SOCKETLABS OK - Server ID: 0000 - 0.26% of total message allowance used; 0.00% of total bandwidth allowance used; 2.74% of total API allowance used|message-usage=0.26%;70;85;; bandwidth-usage=0.00%;70;85;; api-usage=2.74%;70;85;;
+```
 
 Depending on your Nagios installation, follow one of the following guides to install the plugin on your Nagios server -
 * Nagios Core - [Nagios Plugins](https://assets.nagios.com/downloads/nagioscore/docs/nagioscore/4/en/plugins.html)
