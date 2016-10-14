@@ -13,7 +13,7 @@
     "commander" : "^2.9.0"
   },
   "scripts": {
-    "install": "mkdir -p /var/log/socketlabs-status && mv conf/default.json.template conf/default.json"
+    "install": "mkdir -p /var/log/socketlabs-status"
   },
   "bin": {
     "check-socketlabs": "./index.js"
