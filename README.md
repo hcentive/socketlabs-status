@@ -54,7 +54,7 @@ Options:
   -h, --help                    output usage information
   -u, --username <username>     API username
   -p, --password <password>     API password
-  -s --serverid <serverid>      Server ID
+  -s, --serverid <serverid>      Server ID
 ```
 For example, to run the check for a specific server, pass the server ID with the `-s` or `--serverid` parameter.
 ```
