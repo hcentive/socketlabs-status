@@ -22,7 +22,7 @@ $ mv conf/default.json.template conf/default.json
 Optionally, update configuration attributes with your Socketlabs API credentials and server IDs. Make the following changes to `conf/default.json` -
 * Replace `YOUR_API_USERNAME` with your Socketlabs API username.
 * Replace `YOUR_API_PASSWORD` with the password for the API user.
-* Update `server_id` attribute with your Socketlabs server ID. For example, 1000.
+* Update `server_ids` attribute with a comma-separated list of your Socketlabs servers. For example, 1000,1001,1002.
 
 `NOTE: All the above attributes can be passed to the plugin as command-line parameters.`
 
@@ -54,7 +54,7 @@ Options:
   -h, --help                    output usage information
   -u, --username <username>     API username
   -p, --password <password>     API password
-  -s, --serverid <serverid>      Server ID
+  -s, --serverids <server_ids>  Server IDs
 ```
 For example, to run the check for a specific server, pass the server ID with the `-s` or `--serverid` parameter.
 ```

@@ -6,11 +6,11 @@ var socketlabs = require('./lib/socketlabs.js');
 
 program.option('-u, --username <username>', 'API username')
   .option('-p, --password <password>', 'API password')
-  .option('-s, --serverid <serverid>', 'Server ID')
+  .option('-s, --serverids <server_ids>', 'Server IDs')
   .parse(process.argv);
 
 socketlabs.checkAccountData(program.username, program.password,
-  (program.serverid == null ? null : program.serverid), callback);
+  (program.serverids == null ? null : program.serverids), callback);
 
 var callback = function(error, data) {
   if (error) {
