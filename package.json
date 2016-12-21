@@ -1,6 +1,6 @@
 {
   "name": "socketlabs-status",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node module to query status of servers in a Socketlabs account.",
   "main": "index.js",
   "dependencies": {
